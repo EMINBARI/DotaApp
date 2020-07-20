@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37B3CDB624C477B000C07DE1 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B3CDB524C477B000C07DE1 /* Repository.swift */; };
 		37D5BA9E24C3561E00AD6E92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D5BA9D24C3561E00AD6E92 /* AppDelegate.swift */; };
 		37D5BAA024C3561E00AD6E92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D5BA9F24C3561E00AD6E92 /* SceneDelegate.swift */; };
 		37D5BAA224C3561E00AD6E92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D5BAA124C3561E00AD6E92 /* ViewController.swift */; };
 		37D5BAA524C3561E00AD6E92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D5BAA324C3561E00AD6E92 /* Main.storyboard */; };
 		37D5BAA724C3561F00AD6E92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37D5BAA624C3561F00AD6E92 /* Assets.xcassets */; };
 		37D5BAAA24C3561F00AD6E92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D5BAA824C3561F00AD6E92 /* LaunchScreen.storyboard */; };
+		37D5BAB224C3587B00AD6E92 /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D5BAB124C3587B00AD6E92 /* HeroModel.swift */; };
+		37D5BAB524C35CCB00AD6E92 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D5BAB324C35CCB00AD6E92 /* ItemTableViewCell.swift */; };
+		37D5BAB624C35CCB00AD6E92 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D5BAB424C35CCB00AD6E92 /* ItemTableViewCell.xib */; };
+		37D5BAB924C36BC300AD6E92 /* HeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D5BAB824C36BC300AD6E92 /* HeroViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37B3CDB524C477B000C07DE1 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		37D5BA9A24C3561E00AD6E92 /* DotaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DotaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D5BA9D24C3561E00AD6E92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37D5BA9F24C3561E00AD6E92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		37D5BAA624C3561F00AD6E92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37D5BAA924C3561F00AD6E92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37D5BAAB24C3561F00AD6E92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37D5BAB124C3587B00AD6E92 /* HeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModel.swift; sourceTree = "<group>"; };
+		37D5BAB324C35CCB00AD6E92 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		37D5BAB424C35CCB00AD6E92 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		37D5BAB824C36BC300AD6E92 /* HeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,28 @@
 		37D5BA9C24C3561E00AD6E92 /* DotaApp */ = {
 			isa = PBXGroup;
 			children = (
+				37D5BAB724C35CDE00AD6E92 /* ItemCell */,
 				37D5BA9D24C3561E00AD6E92 /* AppDelegate.swift */,
 				37D5BA9F24C3561E00AD6E92 /* SceneDelegate.swift */,
+				37D5BAB824C36BC300AD6E92 /* HeroViewController.swift */,
 				37D5BAA124C3561E00AD6E92 /* ViewController.swift */,
 				37D5BAA324C3561E00AD6E92 /* Main.storyboard */,
 				37D5BAA624C3561F00AD6E92 /* Assets.xcassets */,
 				37D5BAA824C3561F00AD6E92 /* LaunchScreen.storyboard */,
 				37D5BAAB24C3561F00AD6E92 /* Info.plist */,
+				37D5BAB124C3587B00AD6E92 /* HeroModel.swift */,
+				37B3CDB524C477B000C07DE1 /* Repository.swift */,
 			);
 			path = DotaApp;
+			sourceTree = "<group>";
+		};
+		37D5BAB724C35CDE00AD6E92 /* ItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				37D5BAB324C35CCB00AD6E92 /* ItemTableViewCell.swift */,
+				37D5BAB424C35CCB00AD6E92 /* ItemTableViewCell.xib */,
+			);
+			path = ItemCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37D5BAB624C35CCB00AD6E92 /* ItemTableViewCell.xib in Resources */,
 				37D5BAAA24C3561F00AD6E92 /* LaunchScreen.storyboard in Resources */,
 				37D5BAA724C3561F00AD6E92 /* Assets.xcassets in Resources */,
 				37D5BAA524C3561E00AD6E92 /* Main.storyboard in Resources */,
@@ -138,8 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37B3CDB624C477B000C07DE1 /* Repository.swift in Sources */,
 				37D5BAA224C3561E00AD6E92 /* ViewController.swift in Sources */,
+				37D5BAB224C3587B00AD6E92 /* HeroModel.swift in Sources */,
+				37D5BAB524C35CCB00AD6E92 /* ItemTableViewCell.swift in Sources */,
 				37D5BA9E24C3561E00AD6E92 /* AppDelegate.swift in Sources */,
+				37D5BAB924C36BC300AD6E92 /* HeroViewController.swift in Sources */,
 				37D5BAA024C3561E00AD6E92 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
